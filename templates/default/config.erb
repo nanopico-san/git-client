@@ -1,0 +1,17 @@
+Host github.com
+  User git
+  Port 22
+  HostName github.com
+  IdentityFile ~/.ssh/<%= node['git-client']['ssh-key-filename'] %>
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+<% if node['git-client']['enable-bitbucket-host'] -%>
+  
+Host github.com
+  User git
+  Port 22
+  HostName bitbucket.com
+  IdentityFile ~/.ssh/<%= node['git-client']['ssh-key-filename'] %>
+  TCPKeepAlive yes
+  IdentitiesOnly yes
+<% end -%>
