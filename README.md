@@ -16,10 +16,10 @@ I tested Ubuntu 15.10, but maybe other platform could be run except for Windows.
 
 If you want to run this cookbook locally, you should run the below.
 
-```bash local-mode
+```bash
 $ cd ~/chef-repo
 $ chef-repoclient --local-mode --override-runlist git-client
-``
+```
 
 ## License and Author
 
