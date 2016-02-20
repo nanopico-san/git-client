@@ -59,7 +59,7 @@ directory "#{node['git-client']['home-dir']}/.ssh" do
   action :create
 end
 
-template '/#{Chef::Config[:file_cache_path]}/script.exp' do
+template "/#{Chef::Config[:file_cache_path]}/script.exp" do
   source 'script.exp.erb'
   owner  node['git-client']['unix-user']
   group  node['git-client']['group']
