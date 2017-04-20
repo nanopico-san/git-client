@@ -21,7 +21,7 @@
 default['git-client']['unix-user']             = 'user'
 default['git-client']['home-dir']              = "/home/#{node['git-client']['unix-user']}"
 default['git-client']['github-home-dir']       = "#{node['git-client']['home-dir']}/git"
-default['git-client']['group']                 = #{node['git-client']['unix-user']}
+default['git-client']['group']                 = "#{node['git-client']['unix-user']}"
 default['git-client']['username']              = 'git-user'
 default['git-client']['email']                 = 'your@email.com'
 default['git-client']['push-default']          = 'tracking'
